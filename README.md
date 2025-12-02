@@ -60,7 +60,8 @@ If SDL initializes successfully, a window is created using `SDL_CreateWindow`
 - First argument is the title of the window
 - Next two arguments define the window's position, x and y coordinates. `SDL_WINDOWPOS_UNDEFINED` is used as placeholders since we are not concerned with the window's position.
 - Next two arguments are the window's size, width and height.
-- Last argument is the creation flags - `SDL_WINDOW_SHOWN` ensures the window is shown when created.
+- Last argument is the creation flags - `SDL_WINDOW_SHOWN` ensures the window is shown when created.  
+
 If there is an error when creating the window, `SDL_CreateWindow` returns `NULL`. The `if` statement checks for this and prints a message if there is an error.
 
 ### Window Surface
