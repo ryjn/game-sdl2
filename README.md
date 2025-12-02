@@ -2,10 +2,10 @@
 
 ## Setup
 ### SDL2 Installation
-#### MacOS
-Install SDL2 using Homebrew
+Install SDL2 using Homebrew or Pacman
 ```
 brew install sdl2
+pacman -S sdl2
 ```
 
 Include SDL header file:
@@ -22,8 +22,6 @@ g++ main.cpp -o main $(pkg-config --cflags --libs sdl2)
 > If compiling does not work, check to make sure `pkg-config` is installed
 > Can be installed via `brew install pkg-config`
 
-#### Linux
-TBD
 ## The Code
 ### Initialize SDL
 ```cpp

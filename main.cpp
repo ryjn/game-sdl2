@@ -7,7 +7,7 @@ const int SCREEN_WIDTH = 640;
 const int SCREEN_HEIGHT = 480;
 
 // Starts SDL and creates window
-boot init();
+bool init();
 
 // Load media
 bool load_media();
