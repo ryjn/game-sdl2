@@ -81,4 +81,7 @@ Once the window is successfully created, we need to get the window's surface to 
       SDL_Event e; bool quit = false; while( quit == false ){ while( SDL_PollEvent( &e ) ){ if( e.type == SDL_QUIT ) quit = true; } }
     }
 ```
+`SDL_GetWindowSurface` gets the window's surface.  
+`SDL_FillRect` is used to simply fill the surface white  
+Once something is drawn to the surface of a window, it does not mean that it will automatically update.The window needs to be updated using a call to `SDL_UpdateWindowSurface`.  
 
