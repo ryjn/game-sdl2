@@ -6,6 +6,15 @@
 const int SCREEN_WIDTH = 640;
 const int SCREEN_HEIGHT = 480;
 
+// Starts SDL and creates window
+boot init();
+
+// Load media
+bool load_media();
+
+// Frees media and shuts down SDL
+void close();
+
 int main(int argc, char* args[]) {
   // Window
   SDL_Window* window = NULL;
